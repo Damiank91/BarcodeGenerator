@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BarcodeGenerator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BarcodeGenerator_jar</output-path>
+    <root id="archive" name="BarcodeGenerator.jar">
+      <element id="module-output" name="BarcodeGenerator" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itextpdf-5.5.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itext-pdfa-5.5.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itext-xtra-5.5.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itextpdf-5.5.6-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itextpdf-5.5.6-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itext-pdfa-5.5.6-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itext-pdfa-5.5.6-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itext-xtra-5.5.6-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itextPDF/itext-xtra-5.5.6-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-3.13-beta1/poi-3.13-beta1-20150723.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-3.13-beta1/poi-ooxml-3.13-beta1-20150723.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-3.13-beta1/poi-examples-3.13-beta1-20150723.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-3.13-beta1/poi-scratchpad-3.13-beta1-20150723.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/poi-3.13-beta1/poi-ooxml-schemas-3.13-beta1-20150723.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/barbecue-1.5-beta1/barbecue.war" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/barbecue-1.5-beta1/barbecue-1.5-beta1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
