@@ -6,20 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eea18a1-9f10-4f75-8305-3fd2e5f5c952" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Damian\IdeaProjects\BarcodeGenerator\out\production\BarcodeGenerator\View\BarcodeView$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Damian\IdeaProjects\BarcodeGenerator\out\production\BarcodeGenerator\View\BarcodeView$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Damian\IdeaProjects\BarcodeGenerator\out\production\BarcodeGenerator\View\BarcodeView$RadioButtonActionListener.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BarcodeGenerator/View/BarcodeView.class" afterPath="$PROJECT_DIR$/out/production/BarcodeGenerator/View/BarcodeView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/Excel/DataExcel.class" afterPath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/Excel/DataExcel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BarcodeGenerator/MyBarcodeApp/Main.class" afterPath="$PROJECT_DIR$/out/production/BarcodeGenerator/MyBarcodeApp/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyBarcodeFile.xlsx" afterPath="$PROJECT_DIR$/MyBarcodeFile.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/PDF/PdfCreator.class" afterPath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/PDF/PdfCreator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/BarcodeView.java" afterPath="$PROJECT_DIR$/src/View/BarcodeView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Excel/DataExcel.java" afterPath="$PROJECT_DIR$/src/Model/Excel/DataExcel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyBarcodeApp/Main.java" afterPath="$PROJECT_DIR$/src/MyBarcodeApp/Main.java" />
+    <list default="true" id="2eea18a1-9f10-4f75-8305-3fd2e5f5c952" name="Default" comment="Zastosowanie wzorca projektowego MCV">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/PDF/PdfCreator.java" afterPath="$PROJECT_DIR$/src/Model/PDF/PdfCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BarcodeGenerator.iws" />
@@ -42,38 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyBarcodeApp/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BarcodeView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/BarcodeView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-              <folding>
-                <element signature="e#3234#3235#0" expanded="true" />
-                <element signature="e#3280#3281#0" expanded="true" />
-                <element signature="e#3804#3805#0" expanded="true" />
-                <element signature="e#3863#3864#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PdfCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/PDF/PdfCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52921534">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.545082">
+              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -110,10 +71,10 @@
         <option value="$PROJECT_DIR$/src/Model/DataBaseArray/BufferWithExcelConstructor.java" />
         <option value="$PROJECT_DIR$/src/Model/DataBaseArray/ArrayData.java" />
         <option value="$PROJECT_DIR$/src/Model/Excel/DataExcel.java" />
-        <option value="$PROJECT_DIR$/src/Model/PDF/PdfCreator.java" />
         <option value="$PROJECT_DIR$/src/MyBarcodeApp/Main.java" />
         <option value="$PROJECT_DIR$/src/Controller/BarcodeGeneratorController.java" />
         <option value="$PROJECT_DIR$/src/View/BarcodeView.java" />
+        <option value="$PROJECT_DIR$/src/Model/PDF/PdfCreator.java" />
       </list>
     </option>
   </component>
@@ -550,6 +511,13 @@
       <option name="number" value="Default" />
       <updated>1440448853395</updated>
     </task>
+    <task id="LOCAL-00001" summary="Zastosowanie wzorca projektowego MCV">
+      <created>1440710707872</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1440710707872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -564,7 +532,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1770335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1770335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27231467" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -593,7 +561,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="Zastosowanie wzorca projektowego MCV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zastosowanie wzorca projektowego MCV" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -923,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Excel/DataExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6372951">
-          <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/itextPDF/itextpdf-5.5.6-sources.jar!/com/itextpdf/text/Document.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -962,20 +924,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyBarcodeApp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/BarcodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state vertical-scroll-proportion="-1.724541">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="e#3234#3235#0" expanded="true" />
             <element signature="e#3280#3281#0" expanded="true" />
@@ -985,10 +937,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyBarcodeApp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28380635">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Excel/DataExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8864775">
+          <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/PDF/PdfCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52921534">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.545082">
+          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -13,7 +13,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * Created by Damian on 2015-08-22.
+ * Created by Damian on 2015-08-22. Klasa która tworzy plik pdf z danych które otrzymuje od ArrayData
  */
 public class PdfCreator {
 
@@ -52,9 +52,7 @@ public class PdfCreator {
 
     public void setPdfCreator(ArrayData arrayData, String choose, String enterpriseName) throws IOException, DocumentException {
 
-        Document document = new Document(PageSize.A4, 25, 25, 25, 25);// ze strona A4 no i wielko�� akapit�w 25 to standard
-        String headerHoose = choose;
-        String coWybrac = null;
+        Document document = new Document(PageSize.A4, 25, 25, 25, 25);// A4- standardowa wielkość 25mm
 
         PdfWriter.getInstance(document, new FileOutputStream("BarcodeGenerator.pdf"));
         document.open();
@@ -85,13 +83,18 @@ public class PdfCreator {
 
         PdfPTable table = new PdfPTable(5); // 5 columns
         table.setWidthPercentage(100); // tabela na cala strone
-        table.setHeaderRows(4); // ile wierszy to nag��wek ( na ka�dej stronie b�d� sie pojawia�
+        table.setHeaderRows(4); // metoda która mówi, że pierwsze 4 wiersze to nagłówki, powtarzają się na każdej stronie
 
-        table.setWidths(new float[]{8, 25, 22, 40, 45}); // procentowo wielko�� kolumn
+        table.setWidths(new float[]{8, 25, 22, 40, 45}); // procentowo szerokość kolumn
 
-        PdfPCell cell_1 = null;
-        PdfPCell cell_2 = null;
-        if (headerHoose.equals("BS")) {
+        PdfPCell cell_1;
+        PdfPCell cell_2;
+
+        /*
+        * wybór nagłówków w zależności od wyboru użytkownika w GUI
+        * */
+
+        if (choose.equals("BS")) {
             cell_1 = new PdfPCell(new Paragraph(BSfirstHeadline, font));
             cell_2 = new PdfPCell(new Paragraph(BSsecondHeadline, font));
         } else {
@@ -172,7 +175,6 @@ public class PdfCreator {
         document.close();
 
     }
-
 
 
     /*
