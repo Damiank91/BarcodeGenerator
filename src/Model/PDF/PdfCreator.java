@@ -50,10 +50,9 @@ public class PdfCreator {
     private String signature = "Data i podpis";
 
 
+    public void setPdfCreator(ArrayData arrayData, String choose, String enterpriseName) throws IOException, DocumentException {
 
-    public PdfCreator(ArrayData arrayData, String choose) throws IOException, DocumentException {
-
-        Document document = new Document(PageSize.A4,25 ,25,25,25);// ze strona A4 no i wielko�� akapit�w 25 to standard
+        Document document = new Document(PageSize.A4, 25, 25, 25, 25);// ze strona A4 no i wielko�� akapit�w 25 to standard
         String headerHoose = choose;
         String coWybrac = null;
 
@@ -74,7 +73,7 @@ public class PdfCreator {
             boldFont = new Font(baseFont, 9, Font.BOLD);
 
 
-        } catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
 
@@ -82,7 +81,6 @@ public class PdfCreator {
          /*
         *  create the table
         * */
-
 
 
         PdfPTable table = new PdfPTable(5); // 5 columns
@@ -93,7 +91,7 @@ public class PdfCreator {
 
         PdfPCell cell_1 = null;
         PdfPCell cell_2 = null;
-        if(headerHoose.equals("BS")){
+        if (headerHoose.equals("BS")) {
             cell_1 = new PdfPCell(new Paragraph(BSfirstHeadline, font));
             cell_2 = new PdfPCell(new Paragraph(BSsecondHeadline, font));
         } else {
@@ -116,7 +114,7 @@ public class PdfCreator {
         table.addCell(cell_3);
 
 
-        PdfPCell cell_4 = new PdfPCell(new Paragraph(BarcodeView.getEnterpriseName().toString(), boldFont)); //
+        PdfPCell cell_4 = new PdfPCell(new Paragraph(enterpriseName, boldFont));
         cell_4.setColspan(3);
         cell_4.setFixedHeight(18);
         table.addCell(cell_4);
@@ -128,13 +126,13 @@ public class PdfCreator {
         cells[2] = new PdfPCell(new Paragraph(numberCard, font));
         cells[3] = new PdfPCell(new Paragraph(barcode, font));
         cells[4] = new PdfPCell(new Paragraph(signature, font));
-        for(int i=0; i < cells.length; i++){
+        for (int i = 0; i < cells.length; i++) {
             cells[i].setFixedHeight(25);
             table.addCell(cells[i]);
 
         }
 
-        for(int i = 0; i< arrayData.getSize(); i++){
+        for (int i = 0; i < arrayData.getSize(); i++) {
 
             PdfPCell myCell;
 
@@ -142,7 +140,7 @@ public class PdfCreator {
             myCell.setFixedHeight(30);
             table.addCell(myCell);
 
-            String surname = arrayData.getArrayList.get(i).getName()+ " " + arrayData.getArrayList.get(i).getSurname();
+            String surname = arrayData.getArrayList.get(i).getName() + " " + arrayData.getArrayList.get(i).getSurname();
             myCell = new PdfPCell(new Paragraph(surname, font));
             myCell.setFixedHeight(30);
             table.addCell(myCell);
@@ -155,7 +153,7 @@ public class PdfCreator {
             * Add barcode-image to cell
             */
 
-            BufferedImage bufferedImage =  arrayData.getArrayList.get(i).getImage();
+            BufferedImage bufferedImage = arrayData.getArrayList.get(i).getImage();
             Image jpeg = Image.getInstance(bufferedImage, null);
 
 
@@ -174,6 +172,8 @@ public class PdfCreator {
         document.close();
 
     }
+
+
 
     /*
     * rzutowanie bufferedImage na Image

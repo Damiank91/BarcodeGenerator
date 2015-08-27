@@ -33,8 +33,6 @@ public class DataExcel {
     private String surname;
     private BufferedImage image;
 
-    public DataExcel(){
-    }
 
     public ArrayData getDataExcel(String path) throws IOException, Exception {
 
@@ -42,10 +40,9 @@ public class DataExcel {
         FileInputStream fis = null;
         XSSFWorkbook workbook = null;
         try {
-            File file = new File(path);
-            fis = new FileInputStream(file);
-            workbook = new XSSFWorkbook(fis);
 
+            fis = new FileInputStream(new File(path));
+            workbook = new XSSFWorkbook(fis);
 
 
         ownArrayData = new ArrayData();
@@ -77,14 +74,11 @@ public class DataExcel {
                             image = barcodeCreator.getImage(numberCard);
                         }
                         break;
-
                 }
             }
 
             ownArrayData.getNewBufforExToEx(new BufferWithExcelConstructor(iteration, name, surname, numberCard, image));
             iteration++;
-
-
 
         }
             } catch (FileNotFoundException e) {
@@ -96,13 +90,12 @@ public class DataExcel {
             } catch (Exception ex){
                 throw new Exception();
             }
+
         try{
             fis.close();
         } catch (Exception ex){
             ex.printStackTrace();
         }
-
-
 
         return ownArrayData;
     }
