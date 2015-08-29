@@ -18,29 +18,29 @@ import java.io.IOException;
 public class PdfCreator {
 
 
-    private String BSfirstHeadline = "Administratorem danych osobowych użytkowników kart programu MultiSport jest Benefit " +
-            "Systems SA z siedzibą w Warszawie (00-097) przy ul. Fredry 6 („BS”). Twoje dane osobowe pozyskane zostały za " +
-            "pośrednictwem pracodawcy na podstawie zawartej z BS umowy o świadczenie usług i wykorzystywane są do celów " +
+    private String BSfirstHeadline = "Administratorem danych osobowych użytkowników kart programu .... jest ... " +
+            "... SA z siedzibą w Warszawie (00-097) przy ul. ... 6 („...”). Twoje dane osobowe pozyskane zostały za " +
+            "pośrednictwem pracodawcy na podstawie zawartej z ... umowy o świadczenie usług i wykorzystywane są do celów " +
             "realizacji tej umowy. Podanie jakichkolwiek danych osobowych jest dobrowolne, jednak ich brak uniemożliwia " +
-            "prawidłową realizację umowy związanej z programem MultiSport. Masz prawo dostępu do treści swoich danych oraz " +
+            "prawidłową realizację umowy związanej z programem .... Masz prawo dostępu do treści swoich danych oraz " +
             "ich poprawiania, żądania zaprzestania ich przetwarzania ze względu na swoją szczególną sytuację, a także wniesienia " +
             "sprzeciwu, zgodnie z ustawą o ochronie danych osobowych.";
 
 
-    private String FSfirstHeadline = "Administratorem danych osobowych użytkowników kart programu MultiSport jest FitSport Polska S.A. z " +
-            "siedzibą w Warszawie(00-099) przy ul. Canaletta 4 („FSP”). Twoje dane osobowe pozyskane zostały za pośrednictwem pracodawcy na " +
-            "podstawie zawartej z FSP umowy o świadczenie usług i wykorzystywane są do celów realizacji tej umowy. Podanie jakichkolwiek" +
-            " danych osobowych jest dobrowolne, jednak ich brak uniemożliwia prawidłową realizację umowy związanej z programem MultiSport. " +
+    private String FSfirstHeadline = "Administratorem danych osobowych użytkowników kart programu ... jest ... Polska S.A. z " +
+            "siedzibą w ...(00-099) przy ul. ... 4 („...”). Twoje dane osobowe pozyskane zostały za pośrednictwem pracodawcy na " +
+            "podstawie zawartej z ... umowy o świadczenie usług i wykorzystywane są do celów realizacji tej umowy. Podanie jakichkolwiek" +
+            " danych osobowych jest dobrowolne, jednak ich brak uniemożliwia prawidłową realizację umowy związanej z programem .... " +
             "Masz prawo dostępu do treści swoich danych oraz ich poprawiania, żądania zaprzestania ich przetwarzania ze względu na swoją " +
             "szczególną sytuację, a także wniesienia sprzeciwu, zgodnie z ustawą o ochronie danych osobowych.";
 
 
-    private String BSsecondHeadline = "Wyrażam zgodę na przetwarzanie moich danych osobowych przez Benefit Systems SA z " +
-            "siedzibą w Warszawie przy ul. Fredry 6, zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych, " +
+    private String BSsecondHeadline = "Wyrażam zgodę na przetwarzanie moich danych osobowych przez ... ... SA z " +
+            "siedzibą w Warszawie przy ul. ... 6, zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych, " +
             "w celu korzystania z karty w ramach programu MultiSport.";
 
-    private String FSsecondHeadline = "Wyrażam zgodę na przetwarzanie moich danych osobowych przez FitSport Polska S.A.z siedzibą w Warszawie przy ul. " +
-            "Canaletta 4, zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych, w celu korzystania z karty w ramach programu MultiSport.";
+    private String FSsecondHeadline = "Wyrażam zgodę na przetwarzanie moich danych osobowych przez ... ... S.A.z siedzibą w Warszawie przy ul. " +
+            "... 4, zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych, w celu korzystania z karty w ramach programu ....";
 
     private String thirdHeadline = "Nazwa i siedziba firmy, nr id: ";
     private String lp = "L.p.";
