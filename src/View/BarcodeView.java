@@ -51,7 +51,7 @@ public class BarcodeView extends JFrame {
         JPanel panel = new JPanel();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setBounds(500, 200, 400, 380);
-        this.setTitle("Barcode Generator v0.4");
+        this.setTitle("Barcode Generator v0.5");
         setLayout(null);
 
 

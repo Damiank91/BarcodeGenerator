@@ -24,7 +24,7 @@ public class DataExcel {
     *   fields for getDataExcel method
     * */
     static XSSFRow row;
-    private static Integer iteration = 1;
+
     public ArrayData ownArrayData;   // create a static method by my test
     public BarcodeCreator barcodeCreator;  // create a static method by my test
 
@@ -48,7 +48,7 @@ public class DataExcel {
         ownArrayData = new ArrayData();
         ownArrayData.remove();
         XSSFSheet getSheet = workbook.getSheetAt(0);
-
+        int iteration = 1;
         Iterator < Row > rowIterator = getSheet.iterator();
         while (rowIterator.hasNext()) {
             row = (XSSFRow) rowIterator.next();
@@ -66,9 +66,9 @@ public class DataExcel {
 
                     case Cell.CELL_TYPE_STRING:
                         if (cell.getColumnIndex() == 0) {
-                            name = cell.getStringCellValue();
-                        } else if (cell.getColumnIndex() == 1) {
                             surname = cell.getStringCellValue();
+                        } else if (cell.getColumnIndex() == 1) {
+                            name = cell.getStringCellValue();
                         } else {
                             numberCard = cell.getStringCellValue();
                             image = barcodeCreator.getImage(numberCard);
@@ -77,7 +77,7 @@ public class DataExcel {
                 }
             }
 
-            ownArrayData.getNewBufforExToEx(new BufferWithExcelConstructor(iteration, name, surname, numberCard, image));
+            ownArrayData.getNewBufforExToEx(new BufferWithExcelConstructor(iteration, surname, name, numberCard, image));
             iteration++;
 
         }

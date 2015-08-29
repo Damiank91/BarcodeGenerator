@@ -44,7 +44,7 @@ public class PdfCreator {
 
     private String thirdHeadline = "Nazwa i siedziba firmy, nr id: ";
     private String lp = "L.p.";
-    private String name = "Imię i nazwisko pracownika";
+    private String name = "Nazwisko i imię pracownika";
     private String numberCard = "Numer karty";
     private String barcode = "Kod kreskowy nr karty";
     private String signature = "Data i podpis";
@@ -143,7 +143,7 @@ public class PdfCreator {
             myCell.setFixedHeight(30);
             table.addCell(myCell);
 
-            String surname = arrayData.getArrayList.get(i).getName() + " " + arrayData.getArrayList.get(i).getSurname();
+            String surname = arrayData.getArrayList.get(i).getSurname() + " " + arrayData.getArrayList.get(i).getName();
             myCell = new PdfPCell(new Paragraph(surname, font));
             myCell.setFixedHeight(30);
             table.addCell(myCell);

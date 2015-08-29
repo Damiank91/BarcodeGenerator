@@ -31,7 +31,7 @@ public class BufferWithExcelConstructor {
     }
 
 
-    public BufferWithExcelConstructor(Integer lp, String name, String surname, String numberCard, BufferedImage image){
+    public BufferWithExcelConstructor(Integer lp, String surname, String name, String numberCard, BufferedImage image){
         this.lp = lp;
         this.name = name;
         this.surname = surname;
@@ -42,7 +42,7 @@ public class BufferWithExcelConstructor {
 
     @Override
     public String toString(){
-        return getLp() + " " + getName() + " " + getSurname() + " " + getNumberCard() + " " + getImage();
+        return getLp() + " " + getSurname() + " " + getName() + " " + getNumberCard() + " " + getImage();
     }
 }
 
