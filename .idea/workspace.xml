@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2eea18a1-9f10-4f75-8305-3fd2e5f5c952" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/BarcodeGenerator_jar/BarcodeGenerator.jar" afterPath="$PROJECT_DIR$/out/artifacts/BarcodeGenerator_jar/BarcodeGenerator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/DataBaseArray/BufferWithExcelConstructor.class" afterPath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/DataBaseArray/BufferWithExcelConstructor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/Excel/DataExcel.class" afterPath="$PROJECT_DIR$/out/production/BarcodeGenerator/Model/Excel/DataExcel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/BarcodeGeneratorController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BarcodeGenerator.iws" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="PdfCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/PDF/PdfCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.19">
-              <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.30050084">
+              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -601,15 +599,22 @@
       <option name="project" value="LOCAL" />
       <updated>1440853648722</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Barcode Generator">
+      <created>1440862260466</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1440862260467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33014354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -617,13 +622,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32695374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27231467" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27231467" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33014354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -648,7 +652,8 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <MESSAGE value="Zastosowanie wzorca projektowego MCV" />
     <MESSAGE value="Zastosowanie wzorca projektowego MCV&#10;Zmiana pola static int iteration(globalna) na pole int iteration wewnątrz kodu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zastosowanie wzorca projektowego MCV&#10;Zmiana pola static int iteration(globalna) na pole int iteration wewnątrz kodu" />
+    <MESSAGE value="Barcode Generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Barcode Generator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,16 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BarcodeGeneratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8290155">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Excel/DataExcel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15544042">
@@ -1026,10 +1021,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BarcodeGeneratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94323874">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/PDF/PdfCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.19">
-          <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.30050084">
+          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
           <folding />
         </state>
       </provider>
