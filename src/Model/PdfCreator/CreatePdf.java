@@ -41,7 +41,7 @@ public class CreatePdf {
 
     private String thirdHeadline = "Nazwa i siedziba firmy, nr id: ";
     private String lp = "L.p.";
-    private String name = "Nazwisko i imię pracownika";
+    private String nameAndSurname = "Nazwisko i imię pracownika";
     private String numberCard = "Numer karty";
     private String barcode = "Kod kreskowy nr karty";
     private String signature = "Data i podpis";
@@ -129,7 +129,7 @@ public class CreatePdf {
 
         PdfPCell[] cells = new PdfPCell[5];
         cells[0] = new PdfPCell(new Paragraph(lp, font));
-        cells[1] = new PdfPCell(new Paragraph(name, font));
+        cells[1] = new PdfPCell(new Paragraph(nameAndSurname, font));
         cells[2] = new PdfPCell(new Paragraph(numberCard, font));
         cells[3] = new PdfPCell(new Paragraph(barcode, font));
         cells[4] = new PdfPCell(new Paragraph(signature, font));
