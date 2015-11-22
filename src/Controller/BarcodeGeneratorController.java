@@ -1,8 +1,8 @@
 package Controller;
 
-import Model.DataBaseArray.ArrayData;
-import Model.Excel.DataExcel;
-import Model.PDF.PdfCreator;
+import Model.Array.ArrayData;
+import Model.Array.WriteToFile;
+import Model.PdfCreator.CreatePdf;
 import View.BarcodeView;
 import com.itextpdf.text.DocumentException;
 
@@ -18,25 +18,25 @@ import java.io.IOException;
 public class BarcodeGeneratorController {
 
     private BarcodeView view;
-    private DataExcel dataExcel;
+    private WriteToFile writeToFile;
     private ArrayData arrayData;
-    private PdfCreator pdfCreator;
+    private CreatePdf pdfCreator;
     private File file;
     private String namePah;
     private int checker;
     private JFileChooser chooser;
     private String enterpriseName;
-    private String choose = "BS";
+    private String chooseAgreement = "BS";
 
 
-    public BarcodeGeneratorController(BarcodeView view, DataExcel dataExcel, ArrayData arrayData, PdfCreator pdfCreator){
+    public BarcodeGeneratorController(BarcodeView view, WriteToFile writeToFile, ArrayData arrayData, CreatePdf pdfCreator){
         this.view = view;
-        this.dataExcel = dataExcel;
+        this.writeToFile = writeToFile;
         this.arrayData = arrayData;
         this.pdfCreator = pdfCreator;
 
-        this.view.addSearchExcel(new SearchExcelFile());
-        this.view.showAutor(new ShowAutor());
+        this.view.addSearchExcel(new searchExcelFile());
+        this.view.showAuthor(new showAuthor());
     }
 
     public String getNamePah(){
@@ -44,7 +44,7 @@ public class BarcodeGeneratorController {
         return filePah;
     }
 
-    public class SearchExcelFile implements ActionListener {
+    public class searchExcelFile implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
 
@@ -58,32 +58,29 @@ public class BarcodeGeneratorController {
                     namePah = chooser.getSelectedFile().toString();
                     try {
 
-                        arrayData = dataExcel.getDataExcel(getNamePah());
-                        choose = view.getSelectAgreement();
+                        arrayData = writeToFile.getDataExcel(getNamePah());
+                        chooseAgreement = view.getSelectAgreement();
                         enterpriseName = view.getEnterpriseName();
 
-
-                        pdfCreator.setPdfCreator(arrayData,choose,enterpriseName  );
+                        pdfCreator.setPdfCreator(arrayData,chooseAgreement,enterpriseName);
                         JOptionPane.showMessageDialog(null, "Plik został przetworzony");
-                        view.clearEnterpriseFileTextield("");
-
+                        view.clearEnterpriseTextField("");
 
                     } catch (IOException e1) {
-                        e1.printStackTrace();
+                        JOptionPane.showMessageDialog(null, "Wystąpił błąd podczas wyboru pliku!");
                     } catch (DocumentException e1) {
-                        e1.printStackTrace();
+                        JOptionPane.showMessageDialog(null, "Wystąpił błąd podczas tworzenia pliku PDF!");
                     } catch (Exception ex){
                         JOptionPane.showMessageDialog(null,"Niepoprawny format pliku!");
                     }
                 } else {
                     JOptionPane.showMessageDialog(null,"Nie został wybrany plik!");
-
                 }
         }
     }
 
 
-    public class ShowAutor implements ActionListener{
+    public class showAuthor implements ActionListener{
         @Override
          public void actionPerformed(ActionEvent e) {
             JOptionPane.showMessageDialog(null, "Author: Damian Skórka");

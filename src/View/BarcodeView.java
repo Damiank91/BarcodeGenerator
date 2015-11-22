@@ -1,19 +1,7 @@
 package View;
 
-import Model.DataBaseArray.ArrayData;
-import Model.Excel.DataExcel;
-import Model.PDF.PdfCreator;
-import com.itextpdf.text.DocumentException;
-import javafx.scene.control.RadioButton;
-
 import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
 
 /**
  * Created by Damian on 2015-08-23.
@@ -51,7 +39,7 @@ public class BarcodeView extends JFrame {
         JPanel panel = new JPanel();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setBounds(500, 200, 400, 380);
-        this.setTitle("Barcode Generator v0.5");
+        this.setTitle("Barcode Generator v0.7");
         setLayout(null);
 
 
@@ -141,7 +129,7 @@ public class BarcodeView extends JFrame {
         return agreement;
     }
 
-    public void clearEnterpriseFileTextield(String text) {
+    public void clearEnterpriseTextField(String text) {
 
         getEnterprise.setText(text);
     }
@@ -150,7 +138,7 @@ public class BarcodeView extends JFrame {
         searchButton.addActionListener(listenSearchExcel);
     }
 
-    public void showAutor (ActionListener actionListener) {
+    public void showAuthor (ActionListener actionListener) {
         jMenuItem.addActionListener(actionListener);
     }
 }
